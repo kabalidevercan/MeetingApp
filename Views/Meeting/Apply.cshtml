@@ -1,26 +1,28 @@
+@model UserInfo
+
 @{
     ViewBag.Title = "Toplanti Basvurma";
 }
 <h1 class="h4 text-center">Toplanti Katilim Formu</h1>
-<form action="">
+<form method="post" action="">
     <div class="mb-3">
-        <label for="Name" class="form-label">Name</label>
-        <input type="text" name="Name" id="Name" class="form-control">
+        <label user-for= "Name" class="form-label">Name</label>
+        <input user-for= "Name" class="form-control">
 
     </div>
     <div class="mb-3">
-        <label for="Phone" class="form-label">Phone</label>
-        <input type="text" name="Phone" id="Phone" class="form-control">
+        <label user-for= "Phone" class="form-label">Phone</label>
+        <input user-for= "Phone" class="form-control">
 
     </div>
     <div class="mb-3">
-        <label for="Email" class="form-label">Email</label>
-        <input type="email" name="Email" id="Email" class="form-control">
+        <label user-for= "Email" class="form-label">Email</label>
+        <input user-for= "Email" class="form-control">
 
     </div>
     <div class="mb-3">
-        <label for="WillAttend" class="form-label">Katilim Durumu</label>
-        <select name="WillAttend" id="WillAttend" form="form-select">
+        <label user-for= "WillAttend" class="form-label">Katilim Durumu</label>
+        <select user-for= "WillAttend" form="form-select">
             <option value="true">Evet, Geliyorum</option>
             <option value="false">Hayir, Gelemiyorum</option>
         </select>
